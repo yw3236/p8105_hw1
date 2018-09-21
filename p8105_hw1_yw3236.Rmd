@@ -56,3 +56,5 @@ as.numeric(df$vec_logical)
 as.numeric(df$vec_char) 
 as.numeric(df$vec_factor)
 ```
+
+Only logical variable can be converted to numerical variable. Both char and factor variables are not able to be contverted (NA).
