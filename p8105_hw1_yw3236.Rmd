@@ -89,3 +89,10 @@ The mean of x is `r mean(df_plot$x)`.
 The medican of x is `r median(df_plot$x)`.
 
 The proportion of cases for which the logical vector is `TURE` is `r mean(df_plot$vec_logical)`.
+
+The scatterplot of `y` vs `x`.
+
+```{r ggplot using vec_logical}
+ggplot(df_plot, aes(x = x, y = y, color = vec_logical)) + geom_point()
+ggsave("scatter_plot.pdf")
+```
