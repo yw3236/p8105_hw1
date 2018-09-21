@@ -81,3 +81,11 @@ df_plot = tibble(
   vec_factor = as.factor(vec_logical)
 )
 ```
+
+The size of the dataset is `r length(df_plot$x)`.
+
+The mean of x is `r mean(df_plot$x)`.
+
+The medican of x is `r median(df_plot$x)`.
+
+The proportion of cases for which the logical vector is `TURE` is `r mean(df_plot$vec_logical)`.
