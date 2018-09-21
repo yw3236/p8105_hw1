@@ -48,3 +48,11 @@ mean(df$vec_factor)
 ```
 
 For calculating mean, numeric and logical variable work, but char and factor variable don't work. The reason is that numerical and logical variables can be transfered to numerical value, but char and factor variables can't be transfered to numerical value. After transfering to numerical value, R can calculate the mean of the variable.
+
+Convert variables from one type to another.
+
+```{r convert variable_1, warning = FALSE, results = 'hide'}
+as.numeric(df$vec_logical)
+as.numeric(df$vec_char) 
+as.numeric(df$vec_factor)
+```
