@@ -6,11 +6,34 @@ date: 2018-09-21
 ---
 # Set Up
 
-First, I went to GitHub to create a new public repo named p8105_hw1_yw3236.
+First, I went to GitHub to create a new public repo named p8105_hw1.
 
-Second, I created a local R project named p8105_hw1_yw3236 by using File > New Project > Version Control and providing the repo URL.
+Second, I created a local R project named p8105_hw1 by using File > New Project > Version Control and providing the repo URL.
 
 Third, I created a .Rmd file named p8105_hw1_yw3236 by using File > New File > R Markdown File.
 
 Forth, I used `output: github_document` to render a .Rmd file to a .md file.
 
+# Problem 1
+
+Create a data frame comprised of:
+
+  * A random sample of size 10 from a uniform[0, 5] distribution
+  * A logical vector indicating whether elements of the sample are greater than 2
+  * A (length-10) character vector
+  * A (length-10) factor vector
+
+```{r set_up, include = FALSE}
+library(tidyverse)
+```
+
+```{r create r data frame}
+set.seed(1)
+
+df = tibble(
+  vec_numeric = runif(10, min = 0, max = 5),
+  vec_logical = c(vec_numeric > 2),
+  vec_char = c("I", "love", "data", "science", "very", "much", "it", "is", "so", "wonderful"),
+  vec_factor = c("yes", "yes", "yes", "no", "no", "no", "yes", "yes", "no", "no")
+)
+```
