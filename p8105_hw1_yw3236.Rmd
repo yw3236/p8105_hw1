@@ -37,3 +37,12 @@ df = tibble(
   vec_factor = c("yes", "yes", "yes", "no", "no", "no", "yes", "yes", "no", "no")
 )
 ```
+
+Take the mean of each variable in the data frame.
+
+```{r take mean, warning = FALSE}
+mean(df$vec_numeric)
+mean(df$vec_logical)
+mean(df$vec_char)
+mean(df$vec_factor)
+```
