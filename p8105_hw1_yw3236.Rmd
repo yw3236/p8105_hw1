@@ -4,3 +4,13 @@ output: github_document
 author: "Yishan Wang"
 date: 2018-09-21
 ---
+# Set Up
+
+First, I went to GitHub to create a new public repo named p8105_hw1_yw3236.
+
+Second, I created a local R project named p8105_hw1_yw3236 by using File > New Project > Version Control and providing the repo URL.
+
+Third, I created a .Rmd file named p8105_hw1_yw3236 by using File > New File > R Markdown File.
+
+Forth, I used `output: github_document` to render a .Rmd file to a .md file.
+
